@@ -54,6 +54,8 @@ public class Languages {
 
   public static native long scss();
 
+  public static native long sql();
+
   public static native long swift();
 
   public static native long toml();

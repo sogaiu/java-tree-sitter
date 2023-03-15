@@ -21,7 +21,7 @@ task buildSharedObject {
 
     doLast {
         exec {
-            commandLine "./build.py", "src/test/tree-sitter-python"
+            commandLine "./build.py", "src/test/tree-sitter-python", "tree-sitter-sql"
         }
     }
 }
