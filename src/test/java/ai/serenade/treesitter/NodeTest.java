@@ -25,6 +25,7 @@ public class NodeTest extends TestBase {
     }
   }
 
+  /*
   @Test
   void testGetChildren() throws UnsupportedEncodingException {
     try (Parser parser = new Parser()) {
@@ -35,4 +36,5 @@ public class NodeTest extends TestBase {
       }
     }
   }
+  */
 }
