@@ -225,6 +225,14 @@ JNIEXPORT jlong JNICALL Java_ai_serenade_treesitter_Languages_sql
 
 /*
  * Class:     ai_serenade_treesitter_Languages
+ * Method:    sql_bigquery
+ * Signature: ()J
+ */
+JNIEXPORT jlong JNICALL Java_ai_serenade_treesitter_Languages_sql_1bigquery
+  (JNIEnv *, jclass);
+
+/*
+ * Class:     ai_serenade_treesitter_Languages
  * Method:    swift
  * Signature: ()J
  */

@@ -56,6 +56,8 @@ public class Languages {
 
   public static native long sql();
 
+  public static native long sql_bigquery();
+
   public static native long swift();
 
   public static native long toml();

@@ -7,3 +7,6 @@
 [submodule "tree-sitter-sql"]
 	path = tree-sitter-sql
 	url = https://github.com/m-novikov/tree-sitter-sql
+[submodule "tree-sitter-sql-bigquery"]
+	path = tree-sitter-sql-bigquery
+	url = https://github.com/takegue/tree-sitter-sql-bigquery

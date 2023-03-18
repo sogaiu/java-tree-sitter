@@ -219,6 +219,14 @@ Java_ai_serenade_treesitter_Languages_sql(JNIEnv* env, jclass self) {
 }
 #endif
 
+#ifdef TS_LANGUAGE_SQL_BIGQUERY
+extern "C" TSLanguage* tree_sitter_sql_bigquery();
+JNIEXPORT jlong JNICALL
+Java_ai_serenade_treesitter_Languages_sql_1bigquery(JNIEnv* env, jclass self) {
+  return (jlong)tree_sitter_sql_bigquery();
+}
+#endif
+
 #ifdef TS_LANGUAGE_SWIFT
 extern "C" TSLanguage* tree_sitter_swift();
 JNIEXPORT jlong JNICALL
