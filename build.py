@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 
+# https://stackoverflow.com/a/28849344
+import distutils.spawn
+old_spawn = distutils.spawn.spawn
+def my_spawn(*args, **kwargs):
+    print(" ".join(args[0]))
+    old_spawn(*args, **kwargs)
+distutils.spawn.spawn = my_spawn
+
 import argparse
 import ctypes.util
 import distutils.ccompiler
