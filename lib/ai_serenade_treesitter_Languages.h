@@ -41,6 +41,14 @@ JNIEXPORT jlong JNICALL Java_ai_serenade_treesitter_Languages_cSharp
 
 /*
  * Class:     ai_serenade_treesitter_Languages
+ * Method:    clojure
+ * Signature: ()J
+ */
+JNIEXPORT jlong JNICALL Java_ai_serenade_treesitter_Languages_clojure
+  (JNIEnv *, jclass);
+
+/*
+ * Class:     ai_serenade_treesitter_Languages
  * Method:    cpp
  * Signature: ()J
  */

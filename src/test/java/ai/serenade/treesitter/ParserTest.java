@@ -10,10 +10,10 @@ public class ParserTest extends TestBase {
   @Test
   void testParse() throws UnsupportedEncodingException {
     try (Parser parser = new Parser()) {
-      parser.setLanguage(Languages.python());
-      try (Tree tree = parser.parseString("print(\"hi\")")) {
+      parser.setLanguage(Languages.clojure());
+      try (Tree tree = parser.parseString("(+ 1 1)")) {
         assertEquals(
-          "(module (expression_statement (call function: (identifier) arguments: (argument_list (string)))))",
+          "(source (list_lit value: (sym_lit name: (sym_name)) value: (num_lit) value: (num_lit)))",
           tree.getRootNode().getNodeString()
         );
       }

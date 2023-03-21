@@ -35,6 +35,14 @@ Java_ai_serenade_treesitter_Languages_cSharp(JNIEnv* env, jclass self) {
 }
 #endif
 
+#ifdef TS_LANGUAGE_CLOJURE
+extern "C" TSLanguage* tree_sitter_clojure();
+JNIEXPORT jlong JNICALL
+Java_ai_serenade_treesitter_Languages_clojure(JNIEnv* env, jclass self) {
+  return (jlong)tree_sitter_clojure();
+}
+#endif
+
 #ifdef TS_LANGUAGE_CPP
 extern "C" TSLanguage* tree_sitter_cpp();
 JNIEXPORT jlong JNICALL Java_ai_serenade_treesitter_Languages_cpp(JNIEnv* env,

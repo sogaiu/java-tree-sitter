@@ -10,6 +10,8 @@ public class Languages {
 
   public static native long cSharp();
 
+  public static native long clojure();
+
   public static native long cpp();
 
   public static native long css();
